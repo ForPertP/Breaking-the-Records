@@ -4,7 +4,7 @@ vector<int> breakingRecords(vector<int> scores)
     int max = scores[0];
     int min = scores[0];
     
-    std::for_each (scores.begin()+1, scores.end(),
+    std::for_each (scores.cbegin()+1, scores.cend(),
         [&result, &max, &min](auto score)
         {
             if (score > max)
